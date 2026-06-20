@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E-commerce Profit Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="container">
+
+  <header class="hero">
+
+    <button id="themeToggle" class="theme-btn">
+      🌙 Dark Mode
+    </button>
+
+    <h1>E-commerce Profit Calculator</h1>
+
+    <p>
+      Calculate profit, expenses, margins, break-even pricing,
+      and recommended selling price for online sales.
+    </p>
+
+    <div class="contact">
+      <strong>Vivek Sharma</strong>
+      <span>mayvivek059@gmail.com</span>
+    </div>
+
+  </header>
+
+  <section class="calculator">
+
+    <div class="input-card">
+
+      <h2>Enter Details</h2>
+
+      <label>Selling Price (₹)</label>
+      <input type="number" id="sellingPrice" placeholder="999">
+
+      <label>Product Cost (₹)</label>
+      <input type="number" id="productCost" placeholder="450">
+
+      <label>Shipping Cost (₹)</label>
+      <input type="number" id="shippingCost" placeholder="60">
+
+      <label>Marketplace Fee (₹)</label>
+      <input type="number" id="marketplaceFee" placeholder="120">
+
+      <label>Advertising Cost (₹)</label>
+      <input type="number" id="adCost" placeholder="50">
+
+      <div class="button-group">
+        <button onclick="calculateProfit()">Calculate</button>
+        <button class="reset-btn" onclick="resetCalculator()">Reset</button>
+        <button onclick="downloadReport()">Report</button>
+      </div>
+
+    </div>
+
+    <div class="results-card">
+
+      <h2>Results</h2>
+
+      <div class="status" id="statusBadge">
+        Waiting for Calculation
+      </div>
+
+      <div class="margin-section">
+
+        <h3>Profit Margin Health</h3>
+
+        <div class="progress-bar">
+          <div class="progress-fill" id="progressFill"></div>
+        </div>
+
+        <p id="marginText">0% Margin</p>
+
+      </div>
+
+      <div class="result-grid">
+
+        <div class="result-box">
+          <h3>Revenue</h3>
+          <p>₹<span id="revenue">0</span></p>
+        </div>
+
+        <div class="result-box">
+          <h3>Expenses</h3>
+          <p>₹<span id="expenses">0</span></p>
+        </div>
+
+        <div class="result-box">
+          <h3>Profit</h3>
+          <p>₹<span id="profit">0</span></p>
+        </div>
+
+        <div class="result-box">
+          <h3>Margin</h3>
+          <p><span id="margin">0</span>%</p>
+        </div>
+
+      </div>
+
+      <div class="break-even">
+        Break-even Selling Price:
+        <strong>₹<span id="breakeven">0</span></strong>
+      </div>
+
+      <div class="break-even">
+        Recommended Selling Price (30% Margin):
+        <strong>₹<span id="recommendedPrice">0</span></strong>
+      </div>
+
+    </div>
+
+  </section>
+
+  <a
+    href="https://digitalheroesco.com"
+    target="_blank"
+    class="dh-btn"
+  >
+    Built for Digital Heroes
+  </a>
+
+  <footer>
+    Built by Vivek Sharma • 2026
+  </footer>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
