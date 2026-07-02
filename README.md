@@ -26,13 +26,7 @@ A responsive web application that helps online sellers calculate profit, expense
 
 I frequently compare product costs, shipping expenses, marketplace fees, and advertising costs when evaluating online selling opportunities. This tool helps quickly estimate profitability and pricing decisions.
 
-## Live Demo
 
-Add your Vercel URL here after deployment.
-
-## GitHub Repository
-
-Add your GitHub repository URL here after publishing.
 
 ## Author
 
